@@ -12,6 +12,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InMemoryDataService } from './in-memory-data.service';
+import { BetterHeroService } from './better-hero.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { InMemoryDataService } from './in-memory-data.service';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [HeroService],
+  providers: [{ provide: HeroService, useClass: BetterHeroService }],
   bootstrap: [AppComponent]
 })
 

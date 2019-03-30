@@ -1,0 +1,52 @@
+.sidebar {
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    border: 1px;
+    height: 800px;
+    width: 300px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.level-1 {
+    padding: 5px 5px 0 5px;
+    margin: 5px 5px 0 5px;
+}
+
+.rotate90 {
+    transform: rotate(90deg);
+}
+
+
+.level-2 {
+    padding: 5px 5px 0 5px;
+    margin: 5px 5px 0px 25px;
+}
+
+.fold .level-2 {
+    display: none;
+}
+
+.img-1 {
+    width: 14px;
+    height: 14px;
+}
+
+.img-2 {
+    width: 14px;
+    height: 14px;
+}
+
+
+.level-1 div.checkbox {
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid gray;
+    height: 12px;
+    width: 12px;
+    overflow: hidden;
+}
+
+.title-2 {
+    padding-bottom: 2px;
+}

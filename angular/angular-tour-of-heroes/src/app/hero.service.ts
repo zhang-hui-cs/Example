@@ -15,8 +15,9 @@ const httpOptions = {
 export class HeroService {
   private heroesUrl = 'api/heroes';  // URL to web api
 
-  constructor(private http: HttpClient
-    , private messageService: MessageService) {
+  constructor(protected http: HttpClient
+    , protected messageService: MessageService) {
+      console.log(`${new Date()}\tnew HeroService`);
   }
 
   getHeroes(): Observable<Hero[]> {
