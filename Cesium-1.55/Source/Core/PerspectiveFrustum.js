@@ -21,7 +21,7 @@ define([
      * Each plane is represented by a {@link Cartesian4} object, where the x, y, and z components
      * define the unit vector normal to the plane, and the w component is the distance of the
      * plane from the origin/camera position.
-     *
+     * 透视投影，远小近大，符合正常的感观体验
      * @alias PerspectiveFrustum
      * @constructor
      *
