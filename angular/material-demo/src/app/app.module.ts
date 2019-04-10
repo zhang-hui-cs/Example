@@ -44,12 +44,14 @@ import {
 import { InputOverviewExampleComponent } from "./input-overview-example/input-overview-example.component";
 import { FormFieldAppearanceExampleComponent } from "./form-field-appearance-example/form-field-appearance-example.component";
 import { AppRoutingModule } from "./app-routing.module";
+import { TreeNestedOverviewExampleComponent } from './tree-nested-overview-example/tree-nested-overview-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputOverviewExampleComponent,
-    FormFieldAppearanceExampleComponent
+    FormFieldAppearanceExampleComponent,
+    TreeNestedOverviewExampleComponent
   ],
   imports: [
     BrowserModule,
