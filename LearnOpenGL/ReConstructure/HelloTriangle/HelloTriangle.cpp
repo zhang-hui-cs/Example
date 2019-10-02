@@ -29,6 +29,10 @@ HelloTriangle::~HelloTriangle() {
 	if (this->_VBO > 0) {
 		glDeleteBuffers(1, &this->_VBO);
 	}
+
+	if (this->_EBO > 0) {
+		glDeleteBuffers(1, &this->_EBO);
+	}
 }
 
 bool HelloTriangle::CreateVertexShader() {
@@ -111,26 +115,31 @@ bool HelloTriangle::CreateShaderProgram() {
 	return this->LinkShaderProgram();
 }
 
-int HelloTriangle::GetShaderProgram()
-{
-	return this->_shaderProgram;
-}
-
 void HelloTriangle::BindVertexData() {
-	float vertices[] =
-	{
-		-0.5f, -0.5f, 0.0f, // left
-			0.5f, -0.5f, 0.0f, // right
-			0.0f, 0.5f, 0.0f  // top
+	float vertices[] = {
+		 0.5f,  0.5f, 0.0f,  // top right
+		 0.5f, -0.5f, 0.0f,  // bottom right
+		-0.5f, -0.5f, 0.0f,  // bottom left
+		-0.5f,  0.5f, 0.0f   // top left
+	};
+
+	unsigned int indices[] = {  // note that we start from 0!
+		0, 1, 3,   // first triangle
+		1, 2, 3    // second triangle
 	};
 
 	glGenVertexArrays(1, &this->_VAO);
 	glGenBuffers(1, &this->_VBO);
+	glGenBuffers(1, &this->_EBO);
+
 	// bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
 	glBindVertexArray(this->_VAO);
 
 	glBindBuffer(GL_ARRAY_BUFFER, this->_VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this->_EBO);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
@@ -143,6 +152,15 @@ void HelloTriangle::BindVertexData() {
 	glBindVertexArray(0);
 }
 
-unsigned int HelloTriangle::GetVAO() {
-	return this->_VAO;
+void HelloTriangle::Render() {
+	// render
+	// ------
+	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	// draw our first triangle
+	glUseProgram(this->_shaderProgram);
+
+	glBindVertexArray(this->_VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
+	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }

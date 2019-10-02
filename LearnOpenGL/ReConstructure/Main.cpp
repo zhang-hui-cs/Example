@@ -1,9 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "HelloTriangle/HelloTriangle.h"
-
 #include <iostream>
+
+#include "HelloTriangle/HelloTriangle.h"
+#include "HelloTriangle/HelloTriangle2.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -25,8 +26,8 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
 #endif
 
-	// glfw window creation
-	// --------------------
+														 // glfw window creation
+														 // --------------------
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
 	{
@@ -45,12 +46,9 @@ int main()
 		return -1;
 	}
 
-	HelloTriangle* pTriangle = new HelloTriangle();
+	HelloTriangle* pTriangle = new HelloTriangle2();
 	pTriangle->CreateShaderProgram();
 	pTriangle->BindVertexData();
-
-	int shaderProgram = pTriangle->GetShaderProgram();
-	unsigned int VAO = pTriangle->GetVAO();
 
 	// render loop
 	// -----------
@@ -60,17 +58,7 @@ int main()
 		// -----
 		processInput(window);
 
-		// render
-		// ------
-		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		// draw our first triangle
-		glUseProgram(shaderProgram);
-
-		glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-		// glBindVertexArray(0); // no need to unbind it every time
+		pTriangle->Render();
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------

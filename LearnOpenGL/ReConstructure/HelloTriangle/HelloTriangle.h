@@ -1,7 +1,7 @@
 #pragma once
 class HelloTriangle
 {
-private:
+protected:
 	const static char* _vertexShaderSource;
 	const static char* _fragmentShaderSource;
 
@@ -10,14 +10,16 @@ private:
 	int _shaderProgram = -1;
 	unsigned int _VAO = 0;
 	unsigned int _VBO = 0;
+	unsigned int _EBO = 0;
 	bool CreateVertexShader();
-	bool CreateFragmentShader();
 	bool LinkShaderProgram();
+
+	virtual	bool CreateFragmentShader();
 public:
 	HelloTriangle();
 	~HelloTriangle();
-	bool CreateShaderProgram();
-	void BindVertexData();
-	int GetShaderProgram();
-	unsigned int GetVAO();
+
+	virtual	bool CreateShaderProgram();
+	virtual	void BindVertexData();
+	virtual void Render();
 };

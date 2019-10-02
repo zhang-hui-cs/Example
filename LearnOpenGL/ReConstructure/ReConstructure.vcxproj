@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Resources\Sources\glad\glad.c" />
+    <ClCompile Include="HelloTriangle\HelloTriangle2.cpp" />
+    <ClCompile Include="HelloTriangle\HelloTriangle1.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HelloTriangle\HelloTriangle2.h" />
+    <ClInclude Include="HelloTriangle\HelloTriangle1.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
