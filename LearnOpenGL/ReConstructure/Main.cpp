@@ -3,8 +3,11 @@
 
 #include <iostream>
 
-#include "HelloTriangle/HelloTriangle.h"
-#include "HelloTriangle/HelloTriangle2.h"
+#include "HelloShader/HelloShader.h"
+#include "HelloShader/HelloShader2.h"
+
+//#include "HelloTriangle/HelloTriangle.h"
+//#include "HelloTriangle/HelloTriangle2.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -46,7 +49,7 @@ int main()
 		return -1;
 	}
 
-	HelloTriangle* pTriangle = new HelloTriangle2();
+	HelloShader* pTriangle = new HelloShader2();
 	pTriangle->CreateShaderProgram();
 	pTriangle->BindVertexData();
 

@@ -128,15 +128,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Resources\Sources\glad\glad.c" />
+    <ClCompile Include="HelloShader\HelloShader.cpp" />
+    <ClCompile Include="HelloShader\HelloShader2.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle2.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle1.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Tool\FileReader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HelloShader\HelloShader.h" />
+    <ClInclude Include="HelloShader\HelloShader2.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle2.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle1.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle.h" />
+    <ClInclude Include="Tool\FileReader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
