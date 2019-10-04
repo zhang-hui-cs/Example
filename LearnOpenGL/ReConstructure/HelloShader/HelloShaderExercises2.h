@@ -1,6 +1,6 @@
 #pragma once
 #include "HelloShader.h"
-class HelloShader2 :
+class HelloShaderExercises2 :
 	public HelloShader
 {
 protected:
@@ -8,6 +8,5 @@ protected:
 	virtual	bool CreateFragmentShader();
 
 public:
-	virtual	void BindVertexData();
 	virtual void Render();
 };

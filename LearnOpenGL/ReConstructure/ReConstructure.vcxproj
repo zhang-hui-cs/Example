@@ -130,6 +130,9 @@
     <ClCompile Include="..\Resources\Sources\glad\glad.c" />
     <ClCompile Include="HelloShader\HelloShader.cpp" />
     <ClCompile Include="HelloShader\HelloShader2.cpp" />
+    <ClCompile Include="HelloShader\HelloShaderExercises1.cpp" />
+    <ClCompile Include="HelloShader\HelloShaderExercises2.cpp" />
+    <ClCompile Include="HelloShader\HelloShaderExercises3.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle2.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle1.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle.cpp" />
@@ -139,6 +142,9 @@
   <ItemGroup>
     <ClInclude Include="HelloShader\HelloShader.h" />
     <ClInclude Include="HelloShader\HelloShader2.h" />
+    <ClInclude Include="HelloShader\HelloShaderExercises1.h" />
+    <ClInclude Include="HelloShader\HelloShaderExercises2.h" />
+    <ClInclude Include="HelloShader\HelloShaderExercises3.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle2.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle1.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle.h" />

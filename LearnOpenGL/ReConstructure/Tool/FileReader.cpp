@@ -18,12 +18,15 @@ const char* FileReader::ReadFile(const char* filePath)
 		fileStream << ifile.rdbuf();
 		ifile.close();
 		fileContent = fileStream.str();
+
+		const char* pFileContent = fileContent.c_str();
+		char* source = new char[fileContent.length() + 1];
+		strcpy_s(source, fileContent.length() + 1, pFileContent);
+
+		return source;
 	}
 	catch (std::ifstream::failure e) {
 		std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+		return NULL;
 	}
-
-	const char* pFileContent = fileContent.c_str();
-
-	return pFileContent;
 }
