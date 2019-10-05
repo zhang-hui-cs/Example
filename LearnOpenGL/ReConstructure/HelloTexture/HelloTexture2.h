@@ -1,13 +1,14 @@
 #pragma once
-#include "HelloShader.h"
-class HelloShader2 :
-	public HelloShader
+#include "HelloTexture.h"
+class HelloTexture2 :
+	public HelloTexture
 {
 protected:
+	unsigned int _texture2 = 0;
 	virtual	bool CreateVertexShader();
 	virtual	bool CreateFragmentShader();
+	virtual void BindTexture();
 
 public:
-	virtual	void BindData();
 	virtual void Render();
 };

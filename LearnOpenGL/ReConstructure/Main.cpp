@@ -3,8 +3,7 @@
 
 #include <iostream>
 
-#include "HelloShader/HelloShader.h"
-#include "HelloShader/HelloShaderExercises3.h"
+#include "HelloTexture/HelloTexture2.h"
 
 //#include "HelloTriangle/HelloTriangle.h"
 //#include "HelloTriangle/HelloTriangle2.h"
@@ -49,9 +48,9 @@ int main()
 		return -1;
 	}
 
-	HelloShader* pTriangle = new HelloShaderExercises3();
+	HelloShader* pTriangle = new HelloTexture2();
 	pTriangle->CreateShaderProgram();
-	pTriangle->BindVertexData();
+	pTriangle->BindData();
 
 	// render loop
 	// -----------

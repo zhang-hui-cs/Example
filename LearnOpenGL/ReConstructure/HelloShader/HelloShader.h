@@ -21,6 +21,6 @@ public:
 	~HelloShader();
 
 	virtual	bool CreateShaderProgram();
-	virtual	void BindVertexData();
+	virtual	void BindData();
 	virtual void Render();
 };

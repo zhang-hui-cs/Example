@@ -121,7 +121,7 @@ bool HelloShader::CreateShaderProgram() {
 	return this->LinkShaderProgram();
 }
 
-void HelloShader::BindVertexData() {
+void HelloShader::BindData() {
 	float vertices[] = {
 		 0.5f, -0.5f, 0.0f,  // bottom right
 		-0.5f, -0.5f, 0.0f,  // bottom left

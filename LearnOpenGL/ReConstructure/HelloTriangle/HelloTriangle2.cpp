@@ -21,7 +21,7 @@ HelloTriangle2::~HelloTriangle2() {
 	}
 }
 
-void HelloTriangle2::BindVertexData() {
+void HelloTriangle2::BindData() {
 	float vertices1[] = {
 		0.5f,  0.5f, 0.0f,  // top right
 		0.5f, -0.5f, 0.0f,  // bottom right

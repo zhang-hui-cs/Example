@@ -5,6 +5,6 @@ class HelloTriangle1 :
 	public HelloTriangle
 {
 public:
-	virtual	void BindVertexData();
+	virtual	void BindData();
 	virtual void Render();
 };

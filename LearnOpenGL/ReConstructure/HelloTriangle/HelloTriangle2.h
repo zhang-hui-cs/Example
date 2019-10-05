@@ -13,7 +13,7 @@ protected:
 	virtual 	bool LinkShaderProgram();
 public:
 	virtual bool CreateShaderProgram();
-	virtual void BindVertexData();
+	virtual void BindData();
 	virtual void Render();
 
 	~HelloTriangle2();

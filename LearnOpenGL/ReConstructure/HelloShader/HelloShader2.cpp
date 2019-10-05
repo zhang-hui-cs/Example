@@ -19,7 +19,7 @@ bool HelloShader2::CreateFragmentShader()
 	return this->CreateFragmentShaderInternal(this->_fragmentShader, source);
 }
 
-void HelloShader2::BindVertexData()
+void HelloShader2::BindData()
 {
 	float vertices[] = {
 		// positions         // colors

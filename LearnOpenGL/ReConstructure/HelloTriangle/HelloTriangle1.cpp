@@ -4,7 +4,7 @@
 
 #include "HelloTriangle1.h"
 
-void HelloTriangle1::BindVertexData() {
+void HelloTriangle1::BindData() {
 	float vertices[] = {
 		// first triangle
 		 0.5f,  0.5f, 0.0f,  // top right
