@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Resources\Sources\glad\glad.c" />
+    <ClCompile Include="HelloCoordinateSystem\HelloCoordinateSystem.cpp" />
     <ClCompile Include="HelloShader\HelloShader.cpp" />
     <ClCompile Include="HelloShader\HelloShader2.cpp" />
     <ClCompile Include="HelloShader\HelloShaderExercises1.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="HelloShader\HelloShaderExercises3.cpp" />
     <ClCompile Include="HelloTexture\HelloTexture2.cpp" />
     <ClCompile Include="HelloTexture\HelloTexture.cpp" />
+    <ClCompile Include="HelloTexture\HelloTextureExercise2.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle2.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle1.cpp" />
     <ClCompile Include="HelloTriangle\HelloTriangle.cpp" />
@@ -143,6 +145,7 @@
     <ClCompile Include="Tool\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HelloCoordinateSystem\HelloCoordinateSystem.h" />
     <ClInclude Include="HelloShader\HelloShader.h" />
     <ClInclude Include="HelloShader\HelloShader2.h" />
     <ClInclude Include="HelloShader\HelloShaderExercises1.h" />
@@ -150,6 +153,7 @@
     <ClInclude Include="HelloShader\HelloShaderExercises3.h" />
     <ClInclude Include="HelloTexture\HelloTexture.h" />
     <ClInclude Include="HelloTexture\HelloTexture2.h" />
+    <ClInclude Include="HelloTexture\HelloTextureExercise2.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle2.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle1.h" />
     <ClInclude Include="HelloTriangle\HelloTriangle.h" />

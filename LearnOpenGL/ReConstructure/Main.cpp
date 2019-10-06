@@ -1,9 +1,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
 #include <iostream>
+#include <glm/glm/glm.hpp>
+#include <glm/glm/gtc/matrix_transform.hpp>
+#include <glm/glm/gtc/type_ptr.hpp>
 
-#include "HelloTexture/HelloTexture2.h"
+#include "HelloCoordinateSystem/HelloCoordinateSystem.h";
 
 //#include "HelloTriangle/HelloTriangle.h"
 //#include "HelloTriangle/HelloTriangle2.h"
@@ -28,8 +30,8 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
 #endif
 
-														 // glfw window creation
-														 // --------------------
+	// glfw window creation
+	// --------------------
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
 	{
@@ -48,7 +50,7 @@ int main()
 		return -1;
 	}
 
-	HelloShader* pTriangle = new HelloTexture2();
+	HelloShader* pTriangle = new HelloCoordinateSystem();
 	pTriangle->CreateShaderProgram();
 	pTriangle->BindData();
 
