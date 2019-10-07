@@ -63,6 +63,9 @@
     <ClCompile Include="HelloCoordinateSystem\HelloCoordinateSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HelloCoordinateSystem\HelloCoordinateSystem2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HelloTriangle\HelloTriangle.h">
@@ -105,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HelloCoordinateSystem\HelloCoordinateSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelloCoordinateSystem\HelloCoordinateSystem2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

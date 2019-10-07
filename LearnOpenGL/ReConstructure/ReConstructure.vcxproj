@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="..\Resources\Sources\glad\glad.c" />
     <ClCompile Include="HelloCoordinateSystem\HelloCoordinateSystem.cpp" />
+    <ClCompile Include="HelloCoordinateSystem\HelloCoordinateSystem2.cpp" />
     <ClCompile Include="HelloShader\HelloShader.cpp" />
     <ClCompile Include="HelloShader\HelloShader2.cpp" />
     <ClCompile Include="HelloShader\HelloShaderExercises1.cpp" />
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HelloCoordinateSystem\HelloCoordinateSystem.h" />
+    <ClInclude Include="HelloCoordinateSystem\HelloCoordinateSystem2.h" />
     <ClInclude Include="HelloShader\HelloShader.h" />
     <ClInclude Include="HelloShader\HelloShader2.h" />
     <ClInclude Include="HelloShader\HelloShaderExercises1.h" />

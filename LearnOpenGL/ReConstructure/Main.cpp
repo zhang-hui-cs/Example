@@ -5,7 +5,7 @@
 #include <glm/glm/gtc/matrix_transform.hpp>
 #include <glm/glm/gtc/type_ptr.hpp>
 
-#include "HelloCoordinateSystem/HelloCoordinateSystem.h";
+#include "HelloCoordinateSystem/HelloCoordinateSystem2.h";
 
 //#include "HelloTriangle/HelloTriangle.h"
 //#include "HelloTriangle/HelloTriangle2.h"
@@ -50,7 +50,7 @@ int main()
 		return -1;
 	}
 
-	HelloShader* pTriangle = new HelloCoordinateSystem();
+	HelloShader* pTriangle = new HelloCoordinateSystem2();
 	pTriangle->CreateShaderProgram();
 	pTriangle->BindData();
 
