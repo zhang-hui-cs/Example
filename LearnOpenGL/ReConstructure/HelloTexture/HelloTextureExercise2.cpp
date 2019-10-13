@@ -57,7 +57,7 @@ void HelloTextureExercise2::BindTexture()
 	this->_texture = texture;
 }
 
-void HelloTextureExercise2::BindVertexData()
+void HelloTextureExercise2::BindVertex()
 {
 	float vertices[] = {
 		// positions          // colors           // texture coords

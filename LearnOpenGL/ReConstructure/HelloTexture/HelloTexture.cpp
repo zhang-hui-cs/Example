@@ -20,7 +20,7 @@ bool HelloTexture::CreateFragmentShader()
 	return this->CreateFragmentShaderInternal(this->_fragmentShader, source);
 }
 
-void HelloTexture::BindVertexData()
+void HelloTexture::BindVertex()
 {
 	float vertices[] = {
 		// positions          // colors           // texture coords
@@ -103,7 +103,7 @@ void HelloTexture::BindTexture()
 
 void HelloTexture::BindData()
 {
-	this->BindVertexData();
+	this->BindVertex();
 	this->BindTexture();
 }
 

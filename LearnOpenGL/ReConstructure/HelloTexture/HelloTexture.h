@@ -10,7 +10,7 @@ protected:
 	virtual	bool CreateVertexShader();
 	virtual	bool CreateFragmentShader();
 	virtual void BindTexture();
-	virtual void BindVertexData();
+	virtual void BindVertex();
 public:
 	virtual	void BindData();
 	virtual void Render();
