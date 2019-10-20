@@ -1,0 +1,30 @@
+{
+  "name": "learn-webgl",
+  "version": "0.01",
+  "description": "learn webgl",
+  "homepage": "http://cesiumjs.org",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "zhang.hui",
+    "url": "https://github.com/zhanghuihn"
+  },
+  "contributors": [
+    {
+      "name": "zhang.hui",
+      "url": "https://github.com/zhanghuihn"
+    }
+  ],
+  "keywords": [
+    "3D",
+    "webgl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhanghuihn/Example"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  }
+}
